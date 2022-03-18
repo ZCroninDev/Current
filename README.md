@@ -9,13 +9,29 @@ Current is a unique place to get news about a searchable keyword. The focus use 
 
 ### Dependencies
 
-* NewsApi.com api key
+* https://newsapi.org/account api key
 * Vanilla HTML, CSS, and Javascript
+* Axios CDN for API calls 
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Axios- 
+
+	1. Using jsDelivr CDN:
+
+	```
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+	```
+
+	2. Using npm:
+
+	```
+		$ npm install axios
+
+	```
+	
+	3. For other installation methods please see https://axios-http.com/docs/intro
 
 ### Executing program
 

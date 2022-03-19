@@ -1,1 +1,12 @@
-48b8a8b29d314ca9bd565f860395ae6e
+const key = config.MY_API_Key;
+
+async function getUser() {
+    try {
+      const response = await axios.get('https://newsapi.org/v2/everything?q=keyword&apiKey=' + key);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+getUser()

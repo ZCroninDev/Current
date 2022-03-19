@@ -42,16 +42,17 @@ Current is a unique place to get news about a searchable keyword. The focus use 
 
 https://newsapi.org/docs/get-started
 
+https://dev.to/ptprashanttripathi/how-to-hide-api-key-in-github-repo-2ik9
+
 
 ## Authors
 Zachary Cronin SE
-Newsapi.com
 
 ## Version History
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+See the LICENSE.md file for details
 
 ## Acknowledgments
 

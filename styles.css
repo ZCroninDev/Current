@@ -14,30 +14,70 @@ body {
 nav {
     background-color: var(--blue);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 40px 20px 40px 20px;
+    row-gap: 20px;
 }
 
 .title {
     font-size: 24px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 h1 {
     margin: 0;
 }
 
+.search-bar-container {
+    width: 100%;
+    text-align-last: center;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .search-bar {
-    height: 32px;
-    width: 500px;
+    height: 50px;
+    width: 100%;
     border-radius: 10px;
 }
 
 .search-bar-submit {
-    height: 32px;
-    width: 75px;
+    height: 50px;
+    width: 200px;
     border-radius: 10px;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+    nav {
+        padding: 40px 40px 40px 40px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .title {
+        flex-direction: row;
+        padding: 0 20px 0 0; 
+    }
+
+    .search-bar-container {
+        width: 100%;
+        text-align-last: center;
+        row-gap: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 20px;
+    }
+
+    .search-bar {
+        width: 400px;
+    }
+
 }

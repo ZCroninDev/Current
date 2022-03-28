@@ -12,7 +12,7 @@ body {
 }
 
 main {
-    background-color: #cfe4f2;
+    background-color: #ffffff;
 }
 
 nav {
@@ -48,22 +48,24 @@ h1 {
 }
 
 .search-bar {
+    font-size: 20px;
     height: 50px;
     width: 100%;
     border-radius: 10px;
+    background-color: var(--grey-blue);
 }
 
 .search-bar-submit {
+    font-size: 20px;
     height: 50px;
     width: 200px;
     border-radius: 10px;
-    background-color: #fbf4d5;
+    background-color: var(--light-blue);
 }
 
 .header {
-    background-color: var(--grey-blue);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 20px 40px 20px 40px;
 }
 
@@ -72,7 +74,6 @@ h1 {
 }
 
 .filter-options-container {
-    background-color: var(--grey-blue);
     padding: 40px;
 }
 
@@ -91,7 +92,6 @@ h1 {
 }
 
 .articles-container {
-    background-color: var(--tan);
     display: flex;
     flex-direction: column;
     column-gap: 0;
@@ -100,7 +100,9 @@ h1 {
 }
 
 .articles-container-column {
-    background-color: #cfe4f2;
+    background-color: var(--grey-blue);
+    border: 1px solid;
+    border-radius: 5px;
     padding: 20px;
 }
 

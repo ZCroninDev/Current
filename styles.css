@@ -29,10 +29,12 @@ nav {
     font-size: 24px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     margin: 0;
+    padding-left: 20px;
 }
 
 .search-bar-container {
@@ -57,13 +59,38 @@ h1 {
     background-color: #fbf4d5;
 }
 
+.header {
+    background-color: var(--grey-blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
 .filter-options-container {
-    background-color: #ffffff;
+    background-color: var(--grey-blue);
     padding: 40px;
 }
 
+#sort-by {
+    display: flex;
+    justify-content: space-between;
+}
+
+#open {
+    cursor:pointer; 
+}
+
+#close {
+    cursor:pointer; 
+    display: none;
+}
+
 .articles-container {
-    background-color: #fbf4d5;
+    background-color: var(--tan);
     display: flex;
     flex-direction: column;
     column-gap: 0;
@@ -76,6 +103,10 @@ h1 {
     height: 400px;
     width: 100%;
     padding: 20px;
+}
+
+.articles-container-column h2 {
+    text-align: center;
 }
 
 

@@ -26,13 +26,14 @@ nav {
 }
 
 .title {
-    font-size: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 h1 {
+    font-family: cursive;
+    font-size: 36px;
     margin: 0;
     padding-left: 20px;
 }
@@ -100,8 +101,6 @@ h1 {
 
 .articles-container-column {
     background-color: #cfe4f2;
-    height: 400px;
-    width: 100%;
     padding: 20px;
 }
 
@@ -142,5 +141,10 @@ h1 {
         row-gap: 0;
         padding: 40px;
     }
+
+    .articles-container-column {
+        width: 50%;
+    }
+
 
 }

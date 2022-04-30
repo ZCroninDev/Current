@@ -5,16 +5,20 @@ async function getArticles() {
     try {
       const response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=' + key);
 
-      
-      let articlesTitle = response.data.articles[0].title;
-      let titles = document.getElementsByClassName('title');
+      let articles = response.data.articles;
 
-      for (let i = 0; i < titles.length; i++) {
-        titles[i].innerHTML = articlesTitle;
+      let cardTitles = document.getElementsByClassName('article-title');
+
+      for (let i=0; i < articles.length; i++) {
+        articleTitles = articles[i].title;
       }
 
 
-      console.log()
+      // for (let i = 0; i < cardTitles.length; i++) {
+      //   titles[i].innerHTML = articleTitles;
+      // }
+
+      console.log(articleTitles)
     } catch (error) {
       console.error(error);
     }
@@ -24,4 +28,4 @@ getArticles()
 
 
 
-
+// Objective: loop through api articles get titles to display in html

@@ -9,35 +9,34 @@ async function getArticles() {
       let articles = response.data.articles;
 
       // Gets html elements with the class .article-title 
-      let cardTitles = Array.from(document.getElementsByClassName('article-title'));
+      let cardTitles = document.getElementsByClassName('article-title');
+
+      
      
       // Converts html collection to an Array
       for (let i = 0; i < articles.length; i++) {
-        articleTitles= Array(articles[i].title);
+        articleTitles = articles[i].title;
         console.log(articleTitles);
         
-        for (let j = 0; j < cardTitles.length; j++) {
-          cardTitles[j].innerHTML;
-        }
-
-        n.forEach((num1, index) => {
-          const num2 = m[index];
-          console.log(num1, num2);
-        });
-
+      }
+        
+      for (let j = 0; j < cardTitles.length; j++) {
+          cardTitles[j].innerHTML = articleTitles[0];
+          console.log(cardTitles);
       }
 
-      
-      
+        // n.forEach((num1, index) => {
+        //   const num2 = m[index];
+        //   console.log(num1, num2);
+        // });
 
+    
       // loops through each cardTitle to display each article title
       // for (let j = 0; j < cardTitles.length; j++) {
       //   cardTitles[j].innerHTML = articleTitles;
       // }
 
-      console.log(cardTitles);
-      
-
+    
     } catch (error) {
       console.error(error);
     }
